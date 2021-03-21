@@ -143,9 +143,16 @@ h1 {
     text-align: center;
     text-transform: uppercase;
 
-    color: #FFFFFF;
     cursor: pointer;
     transition: 0.3s margin-top;
+
+}
+.more .more_text a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.more .more_text a:hover {
+    text-decoration: underline;
 }
 
 .more .more_img {
