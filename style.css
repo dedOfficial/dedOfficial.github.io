@@ -59,10 +59,15 @@ a:hover {
   z-index: 1000;
 }
 
-.head__descr {
+.head__descr, .head__descr_adapt {
   display: block;
   grid-area: descr;
   margin: auto;
+  text-align: center;
+}
+
+.head__descr_adapt {
+  display: none;
 }
 
 
@@ -124,4 +129,49 @@ a:hover {
   transition: all 0.3s ease-out;
 }
 
+@media(max-width: 1280px) {
+  .container {
+    width: 768px;
+  }
+}
 
+@media(max-width: 850px) {
+  .head__descr {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+
+  .projects__title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .projects__link {
+    padding: 0.6em 0.6em 0.6em 2em;
+  }
+}
+
+@media(max-width: 560px) {
+  .container {
+    width: 90%;
+  }
+
+  .projects__link {
+    padding: 0.6em 0.6em 0.6em 2em;
+  }
+}
+
+@media(max-width: 425px) {
+  .head__descr {
+    display: none;
+  }
+  .head__descr_adapt {
+    display: block;
+    font-size: 14px;
+  }
+}
