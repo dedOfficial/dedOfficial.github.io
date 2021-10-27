@@ -83,7 +83,7 @@ a:hover {
   font-weight: 500;
 }
 
-.projects__link > .danger {
+.danger {
   color: red;
 }
 
