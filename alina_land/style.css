@@ -9,6 +9,33 @@
 }
 section {
   padding-left: 45px;
+  display: flex;
+  position: relative;
+}
+
+.big img {
+  width: 50%;
+}
+
+.aside {
+  background-color: #fff;
+  position: absolute;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+  font-weight: 600;
+  bottom: 150px;
+  right: 130px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 *,
